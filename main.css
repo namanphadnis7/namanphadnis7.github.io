@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@100;300&family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@100;300&family=Source+Sans+Pro:wght@300;400&display=swap');
+
+body{
+    margin:0;
+    padding: 0;
+    
+}
+body{
+    /* background-color: burlywood; */
+}
+
+header{
+    width: 100%;
+    height: 70px;
+    margin-top: 3%;
+}
+
+.logo{
+    float: left;
+    margin-left: 5%;
+    /* background-color: tomato; */
+}
+nav .navigation{
+    width: 60%;
+    height: 1vw;
+    float:right;
+    margin-right: 5%;
+    padding-top: 1%;
+    /* background-color: yellow; */
+}
+
+nav .navlist{
+    display: inline-block;
+    margin-left: 9%;
+    text-align: center; 
+    font-size: 1.5vw;
+    position: relative;
+    right:-15vw;
+}
+
+nav a {
+    text-decoration: none;
+    /* background-color: tomato; */
+}
+.herotext{
+    margin-top: 4%;
+    margin-left: 6%;
+    padding-top: 3%;
+    /* background-color: teal; */
+    float: left;
+    
+}
+.herotext h1{
+    font-family: "Inter";
+    font-size: 5vw;
+}
+.herotext h2{
+    position: relative;
+    right:-6px;
+    font-family: "Poppins";
+    font-size: 2vw;
+}
+
+.heroimg{
+    width: 25%;
+    margin-right: 15%;
+    margin-top: 4%;
+    padding-top: 5%;
+    /* background-color:turquoise; */
+    float: right;
+}
+
+.heroimg img{
+    float: right;
+
+}
+.nava{
+    font-family: "Poppins";
+    font-weight: 300;
+    color: black;
+    font-size: 1.5vw;
+}
+.nava:hover{
+    background-color: transparent;
+}
+.footer{
+    margin-top: 10%;
+    text-align: center;
+}
+
+.blank{
+    height: 30%;
+    margin-top: 35%;
+    /* background-color: tomato; */
+}
+.aboutimg{
+
+    float: left;
+    /* background-color: teal; */
+    margin-top: 10%;
+
+    
+}
+.abouttext{
+    float: right;
+    /* background-color: violet; */
+    padding-right: 10%;
+    padding-left: 5%;
+    margin-top: 12%;
+    
+}
+.abouttext p{
+    font-family: "Source Sans Pro";
+    font-weight: 300;
+    font-size: 1.5vw;
+}
+/* Create two equal columns that floats next to each other */
+.aboutimg {
+    float: left;
+    width: 40%;
+ 
+  }
+  .abouttext{
+    float: right;
+    width: 50%;
+  
+
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .aboutimg {
+      width: 100%;
+    }
+    .abouttext{
+        width: 100%;
+    }
+  }
+.aboutmore{
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+}
+.aboutmore p{
+    font-family: "Source Sans Pro";
+    font-size: 1vw;
+}
+.collage{
+    margin: 10%;
+}
+.projui{
+    position: relative;
+    text-align: center;
+    height: 15vw;
+    margin-top: 10%;
+    margin-left: 30%;
+    background-color: blue;
+}
+#firstui{
+    margin-top: 5%;
+}
+.projgames{
+    position: relative;
+    text-align: center;
+    height: 15vw;
+    margin-top: 10%;
+    margin-right: 30%;
+    background-color:gray;
+}
+.projother{
+    position: relative;
+    text-align: center;
+    height: 15vw;
+    margin-top: 10%;
+    margin-left: 30%;
+    background-color:red;
+}
+.uitext{
+position: absolute;
+  top: 60%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+}
+.uitext h1{
+    font-family: "Inter";
+    font-size: 3vw;
+    color: white;
+}
+.gametext{
+    position: absolute;
+      top: 60%;
+      left: 70%;
+      transform: translate(-50%, -50%);
+    }
+.gametext h1{
+        font-family: "Inter";
+        font-size: 3vw;
+        color: white;
+    }
+.othertext{
+        position: absolute;
+          top: 60%;
+          left: 30%;
+          transform: translate(-50%, -50%);
+        }
+.othertext h1{
+            font-family: "Inter";
+            font-size: 3vw;
+            color: white;
+        }
+#phonestory{
+    width: 70%;
+    position: absolute;
+    left: 55%;
+}
+.uititle h1{
+    width: 100%;
+    margin-top: 7%;
+    margin-left: 8%;
+    font-family: "Poppins";
+    font-weight: 200;
+    font-size: 3vw;
+}
