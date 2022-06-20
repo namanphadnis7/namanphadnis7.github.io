@@ -8,9 +8,6 @@ body{
     padding: 0;
     
 }
-body{
-    /* background-color: burlywood; */
-}
 
 header{
     width: 100%;
@@ -154,7 +151,8 @@ nav a {
 }
 .aboutmore p{
     font-family: "Source Sans Pro";
-    font-size: 1vw;
+    font-size: 1.2vw;
+    letter-spacing: 0.04em;
 }
 .collage{
     margin: 10%;
@@ -165,7 +163,7 @@ nav a {
     height: 15vw;
     margin-top: 10%;
     margin-left: 30%;
-    background-color: blue;
+    
 }
 #firstui{
     margin-top: 5%;
@@ -184,7 +182,7 @@ nav a {
     height: 15vw;
     margin-top: 10%;
     margin-left: 30%;
-    background-color:red;
+
 }
 .uitext{
 position: absolute;
@@ -231,4 +229,154 @@ position: absolute;
     font-family: "Poppins";
     font-weight: 200;
     font-size: 3vw;
+}
+.projtitle{
+    width: 70%;
+}
+.projtitle h1{
+    width: 100%;
+    margin-top: 10%;
+    margin-left: 8%;
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 4vw;
+}
+.uxproj{
+
+   position: relative;
+   width: 100%;
+   height: 40vw;
+   right: 8%;
+   /* background-color: blue; */
+
+}
+.uxprojimg{
+ float: right;
+ height: 30vw;
+  margin-top: 3%;
+  /* background-color: brown; */
+
+}
+.uxprojtext{
+  width:50%;
+  position:absolute;
+  top:22%;
+  left:16.5%;
+ 
+}
+.uximg{
+    float: right;
+}
+.uxprojtext p{
+    font-family: "Source Sans Pro";
+    font-weight: 300;
+    font-size: 1.5vw;
+}
+.problemux {
+    width: 100%;
+    text-align: center;
+}
+.problemux h1{
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 2.5vw;
+}
+.problemux p{
+    font-family: "Source Sans Pro";
+    font-weight: 300;
+    font-size: 1.2vw;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: justify;
+    text-align-last: center;
+}
+.probrow {
+    display: flex;
+    margin-top: 5%;
+    margin-left: 15%;
+  }
+  
+  .probcolumn {
+    flex: 33.33%;
+    
+  }
+  .researchux{
+    width: 85%;
+    text-align: left;
+    margin-top: 8%;
+    margin-left: 8%;
+    margin-bottom: 3%;
+  }
+
+  .researchux h1{
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 2.5vw;
+    padding-left: 3%;
+}
+.researchux p{
+    font-family: "Source Sans Pro";
+    font-weight: 300;
+    font-size: 1.2vw;
+    padding-left: 3.2%;
+
+}
+.lrow {
+    display: flex;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    
+  }
+  
+  .lcolumn {
+    flex: 50;
+    
+  }
+
+  .lcolumn h1{
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 2vw;
+  }
+  .lcolumn p{
+    font-family: "Source Sans Pro";
+    font-weight: 300;
+    font-size: 1.3vw;
+    text-align: justify;
+    text-align-last: left;
+    padding-right: 15%;
+
+  }
+  .rrow {
+    display: flex;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  
+  .rrcolumn {
+    flex: 50;
+  
+  }
+
+  .rrcolumn h1{
+    text-align: right;
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 2vw;
+  }
+  .rrcolumn p{
+    font-family: "Source Sans Pro";
+    font-weight: 300;
+    font-size: 1.3vw;
+    text-align: justify;
+    text-align-last: right;
+    padding-left: 15%;
+
+  }
+
+.affdiag{
+   
+    text-align: center;
 }
