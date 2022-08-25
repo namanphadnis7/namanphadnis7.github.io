@@ -42,6 +42,7 @@ nav a {
     text-decoration: none;
     /* background-color: tomato; */
 }
+
 .herotext{
     margin-top: 4%;
     margin-left: 6%;
@@ -80,6 +81,22 @@ nav a {
     color: black;
     font-size: 1.5vw;
 }
+.nava::after{
+    content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #443fbb;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.nava:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
 .nava:hover{
     background-color: transparent;
 }
@@ -163,7 +180,14 @@ nav a {
     height: 15vw;
     margin-top: 10%;
     margin-left: 30%;
-    
+    -webkit-filter: sepia(0);
+	filter: sepia(0);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.projui:hover{
+    -webkit-filter: sepia(20);
+	filter: sepia(20);
 }
 #firstui{
     margin-top: 5%;
@@ -174,7 +198,14 @@ nav a {
     height: 15vw;
     margin-top: 10%;
     margin-right: 30%;
-    background-color:gray;
+    -webkit-filter: sepia(0);
+	filter: sepia(0);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.projgames:hover{
+    -webkit-filter: sepia(20);
+	filter: sepia(20);
 }
 .projother{
     position: relative;
@@ -182,7 +213,14 @@ nav a {
     height: 15vw;
     margin-top: 10%;
     margin-left: 30%;
-
+    -webkit-filter: sepia(0);
+	filter: sepia(0);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.projother:hover{
+    -webkit-filter: sepia(20);
+	filter: sepia(20);
 }
 .uitext{
 position: absolute;
@@ -333,6 +371,15 @@ position: absolute;
     flex: 50;
     
   }
+  .lcolumnyt {
+    flex: 50;
+    opacity: 1;
+    transition: 0.3s;
+    
+  }
+  .lcolumnyt:hover{
+    opacity: 0.5;
+}
 
   .lcolumn h1{
     font-family: "Inter";
