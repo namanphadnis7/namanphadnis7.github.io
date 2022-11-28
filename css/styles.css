@@ -261,7 +261,15 @@ transition: all .2s ease-in;
     background-color: var(--second-color);
     transition: .5s;
   }
+  .scroll-down{
+
+    display: none;
+    
+  }
+
+
 }
+
 
 .nav__item {
   margin-bottom: var(--mb-4);

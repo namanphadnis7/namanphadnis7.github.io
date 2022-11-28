@@ -40,3 +40,6 @@ function getElementY(query) {
    document.getElementById('topbutt').addEventListener('click', doScrolling.bind(null, '#top', 1500))
 
 
+   
+
+
