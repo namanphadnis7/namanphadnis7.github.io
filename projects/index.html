@@ -1,71 +1,102 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>My Projects</title>
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel = "icon" href = "../files/common/headlogo.png" type = "image/x-icon">
-        <link rel = "stylesheet" href = "../main.css">
-        <link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/>
+
+        <link rel="stylesheet" href="../css/styles.css">
+        
+
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <title>Portfolio website complete</title>
     </head>
     <body>
-        <header>
-            <nav class="white z-depth-0">
-                <a href="../">
-                    <img class="logo" src= "../files/common/logo.png" width="5%" alt="Home Button Logo">
-                </a>
-                <ul class="navigation right">
-                    <li class= "navlist">
-                        <a class="navaon" id="culprit" href="../projects/">Projects</a>
-                    </li>
-                    <li class="navlist">
-                        <a class= "nava" href="../files/resume.pdf" target="_blank">Resume</a>
-                    </li>
-                    <li class="navlist">
-                        <a class="nava" href="../about/">About me</a>
-                    </li>
-                </ul>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="index.html" class="nav__logo">
+                        <img class= "logo_img" src="../files/home/derp4.png" width="70rem" height="auto" alt="home button logo">
+                    </a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item animation"><a href="#home" class="nav__link">Home</a></li>
+                        <li class="nav__item animation"><a href="#uxproj" id="temp" class="nav__link active">Projects</a></li>
+                        <li class="nav__item animation"><a href="#resume" class="nav__link">Resume</a></li>
+                        <li class="nav__item animation"><a href="#aboutme" class="nav__link">About Me</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
             </nav>
         </header>
 
-        <div class="projui">
-            <a href="ux/">
-            <img src= "../files/others/ui.png" width="100%" alt="User Experience Projects">
-            <div class="uitext">
-                <h1>UI/UX</h1>
-            </div>
-             </a>
-        </div>
-        <div class="projgames">
-            <a href="gamedesign/">
-            <img src= "../files/others/game.png" width="100%" alt="Game Design Projects">
-            <div class="gametext">
-                <h1>Game Design</h1>
-            </div>
-            </a>
-        </div>
-        <div class="projother">
-            <a href="misc/">
-            <img src= "../files/others/other.png" width="100%" alt="Other Projects">
-            <div class="othertext">
-                <h1>Miscellaneous</h1>
-            </div>
-            </a>
-        </div>
-        <div class="footer">
-            <div class="row container">
-                <a href="mailto:namanphadnis7@gmail.com" target="blank" style="padding: 10px">
-                    <img src="../files/common/mail.png" alt="Email Logo" width="3%">
-                </a>
-                <a href="https://www.linkedin.com/in/naman-phadnis/" target="blank" style="padding: 10px">
-                    <img src="../files/common/link.png" alt="Linkedin Logo" width="3%">
-                </a>
-                <div class="row" style="text-align: center; font-size: 1vw;">
-                    <p class="text">Designed and Built by Naman Phadnis
-                </p>
+        <main class="l-main">
+            <section class="about section " id="ux">
+                <h2 class="section-title" id="ux2">Projects</h2>
+                <div class="about__container bd-grid" >
+                    <div class="othername">
+                        <a href="#" style="text-decoration: none;"></a><img src="../files/projects/ux.png" alt=""></a>   
+                    </div>
+                    
+                    <div>
+                        <h1 style="font-size: 3rem;" class="about__subtitle">User Experience</h1>  
+                        <br><br>
+                        <a href="#" class="button">See Projects</a>   
+                    </div> 
+                </div>
+                <div class="about__container bd-grid" >
+                    <div class="othername">
+                        <a href="#" style="text-decoration: none;"></a><img src="../files/projects/game.png" alt=""></a>   
+                    </div>
+                    
+                    <div>
+                        <h1 style="font-size: 3rem;" class="about__subtitle">Game Design</h1>  
+                        <br><br>
+                        <a href="#" class="button">See Projects</a>   
+                    </div> 
+                </div>
+                <div class="about__container bd-grid" >
+                    <div class="othername">
+                        <a href="#" style="text-decoration: none;"></a><img src="../files/projects/social.png" alt=""></a>   
+                    </div>
+                    
+                    <div>
+                        <h1 style="font-size: 3rem;" class="about__subtitle">Miscellaneous</h1>  
+                        <br><br>
+                        <a href="#" class="button">See Projects</a>   
+                    </div> 
                 </div>
             </div>
-        </div> 
+                                         
+            </section>
+            
+                <!--===== HOME =====-->
+              
+            <!--===== ABOUT =====-->
+           
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title">Naman Phadnis</p>
+            <div class="footer__social">
+                <a href="" class="footer__icon"><i class='bx bxl-linkedin'></i></a>
+                <a href="" class="footer__icon"><i class='bx bxs-envelope'></i></a>
+            </div>
+        </footer>
+
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="../js/main.js">
+
+        </script>
     </body>
-    </html>
+</html>

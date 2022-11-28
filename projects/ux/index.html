@@ -1,99 +1,166 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>UI UX Projects</title>
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel = "icon" href = "../../files/common/headlogo.png" type = "image/x-icon">
-        <link rel = "stylesheet" href = "../../main.css">
-        <link type="text/css" rel="stylesheet" href="../../css/materialize.min.css"  media="screen,projection"/>
+
+        <link rel="stylesheet" href="../../css/styles.css">
+        
+
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <title>Portfolio website complete</title>
     </head>
     <body>
-        <header>
-            <nav class="white z-depth-0">
-                <a href="../../">
-                    <img class="logo" src= "../../files/common/logo.png" width="5%" alt="Home Button Logo">
-                </a>
-                <ul class="navigation right">
-                    <li class= "navlist">
-                        <a class="navaon" id="culprit" href="../../projects/">Projects</a>
-                    </li>
-                    <li class="navlist">
-                        <a class= "nava" href="../../files/resume.pdf" target="_blank">Resume</a>
-                    </li>
-                    <li class="navlist">
-                        <a class="nava" href="../../about/">About me</a>
-                    </li>
-                </ul>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="index.html" class="nav__logo">
+                        <img class= "logo_img" src="../../files/home/derp4.png" width="70rem" height="auto" alt="home button logo">
+                    </a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item animation"><a href="#home" class="nav__link">Home</a></li>
+                        <li class="nav__item animation"><a href="#uxproj" id="temp" class="nav__link active">Projects</a></li>
+                        <li class="nav__item animation"><a href="#resume" class="nav__link">Resume</a></li>
+                        <li class="nav__item animation"><a href="#aboutme" class="nav__link">About Me</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
             </nav>
         </header>
-        <div class="uititle">
-            <h1>
-                UI UX Projects
-            </h1>
-        </div>
-        <div class="projui" id="firstui">
-            <a href="uxresearch/">
-            <img src= "../../files/uxres/uxresearch.png" width="100%" alt="UX Research Project">
-            <div class="uitext">
-                <h1>UX Research Project</h1>
-            </div>
-            </a>
-        </div>
-        <div class="projgames" id="phone">
-            <a href="interactiondesign/">
-            <img src= "../../files/others/phonestory.png" width="100%" alt="Interaction Design Project">
-            <div class="gametext" id="phonestory">
-                <h1 style="float:right">Interaction Design Project</h1>
-            </div>
-            </a>
-        </div>
-        <div class="projother">
-            <a href="designthinking/">
-            <img src= "../../files/others/youth.png" width="100%" alt="Design Thinking Project">
-            <div class="othertext">
-                <h1>Design Thinking</h1>
-            </div>
-            </a>
-        </div>
-        <div class="projgames">
-            <a href="usability/">
-            <img src= "../../files/usability/usability.png" width="100%" alt="Usability Testing">
-            <div class="gametext" id="phonestory">
-                <h1 style="float:right">Usability Testing</h1>
-            </div>
-            </a>
-        </div>
-        <div class="projother">
-            <a href="accessibility/">
-            <img src= "../../files/accessibility/accessibility.png" width="100%" alt="Accessibility Testing">
-            <div class="othertext">
-                <h1>Accessibility Testing</h1>
-            </div>
-            </a>
-        </div>
-        <div class="projgames">
-            <a href="mentalhealth/">
-            <img src= "../../files/mhealth/mental.png" width="100%" alt="Mental Health Website">
-            <div class="gametext" id="phonestory">
-                <h1 style="float:right">Mental Health Website</h1>
-            </div>
-            </a>
-        </div>
-        <div class="footer">
-            <div class="row container">
-                <a href="mailto:namanphadnis7@gmail.com" target="blank" style="padding: 10px">
-                    <img src="../../files/common/mail.png" alt="Email Logo" width="3%">
-                </a>
-                <a href="https://www.linkedin.com/in/naman-phadnis/" target="blank" style="padding: 10px">
-                    <img src="../../files/common/link.png" alt="Linkedin Logo" width="3%">
-                </a>
-                <div class="row" style="text-align: center; font-size: 1vw;">
-                    <p class="text">Designed and Built by Naman Phadnis
-                </p>
+
+        <main class="l-main">
+            <section class="about section " id="top">
+                <div>
+                    <a href="#title" id="topbutt" class="backtop hidden"></a>
+
                 </div>
+                <h2 class="section-title" id="ux2">UX Projects</h2>
+                <div class="about__container bd-grid" style="background-image: url(../../files/ux/coolschool.png);" >
+                    <div>
+
+                    </div>
+                    <div style="text-align: center; padding-top: 5rem;">
+                        <h1 style="font-size: 2rem; color: white;" class="about__subtitle">Cool School Re-Design</h1>  
+                        <h2 class="about__subtitle" style="font-weight: 300; font-size: 1.25rem; color: white;">Client- FJ Lennon</h2>  
+                        <br><br>
+                        <a href="#" class="button">See Details</a>   
+                    </div> 
+                </div>
+
+                <br><br>
+                
+                <div class="about__container bd-grid" style="background-image: url(../../files/ux/711.png);" >
+                    <div style="text-align: center; padding-top: 5rem;">
+                        <h1 style="font-size: 2rem; color: white;" class="about__subtitle">UMD Overwatch App</h1>  
+                        <h2 class="about__subtitle" style="font-weight: 300; font-size: 1.25rem; color: white;">Class Project- Interaction Design</h2>  
+                        <br><br>
+                        <a href="#" class="button">See Details</a>
+                    </div>
+                    <div >
+                           
+                    </div> 
+                </div>
+                <br><br>
+                <div class="about__container bd-grid" style="background-image: url(../../files/ux/710.png);" >
+                    <div>
+
+                    </div>
+                    <div style="text-align: center; padding-top: 5rem;">
+                        <h1 style="font-size: 2rem; color: white;" class="about__subtitle">iSchool Identity Research</h1>  
+                        <h2 class="about__subtitle" style="font-weight: 300; font-size: 1.25rem; color: white;">Client- College of Information Studies, UMD</h2>  
+                        <br><br>
+                        <a href="#" class="button">See Details</a>   
+                    </div> 
+                </div>
+                <br><br>
+                <div class="about__container bd-grid" style="background-image: url(../../files/ux/704.png);" >
+                    <div style="text-align: center; padding-top: 5rem;">
+                        <h1 style="font-size: 2rem; color: white;" class="about__subtitle">Object Tracking App for the Elderly</h1>  
+                        <h2 class="about__subtitle" style="font-weight: 300; font-size: 1.25rem; color: white;">Class Project- Inclusive Design</h2>  
+                        <br><br>
+                        <a href="#" class="button">See Details</a>
+                    </div>
+                    <div >
+                        
+                           
+                    </div> 
+                </div>
+                <br><br>
+
+                <div class="about__container bd-grid" style="background-image: url(../../files/ux/visapic.png);" >
+                    <div>
+
+                    </div>
+                    <div style="text-align: center; padding-top: 5rem;">
+                        <h1 style="font-size: 2rem; color: white;" class="about__subtitle">UX Makethon Visa Challenge</h1>  
+                        <h2 class="about__subtitle" style="font-weight: 300; font-size: 1.25rem; color: white;">Design Contest</h2>  
+                        <br><br>
+                        <a href="#" class="button">See Details</a>   
+                    </div> 
+                </div>
+                <br><br>
+
+                <div class="about__container bd-grid" style="background-image: url(../../files/ux/usability.png);" >
+                    <div style="text-align: center; padding-top: 5rem;">
+                        <h1 style="font-size: 2rem; color: white;" class="about__subtitle">Usability and Accessibility Testing</h1>  
+                        <h2 class="about__subtitle" style="font-weight: 300; font-size: 1.25rem; color: white;">Class Project- Fundamentals of HCI</h2>  
+                        <br><br>
+                        <a href="#" class="button">See Details</a>   
+                    </div> 
+                    
+                    <div>
+
+                    </div>
+                </div>
+                <br><br>
+                
+                <div class="about__container bd-grid" style="background-image: url(../../files/ux/youth.png);" >
+                    <div>
+
+                    </div>
+                    <div style="text-align: center; padding-top: 5rem;">
+                        <h1 style="font-size: 2rem; color: white;" class="about__subtitle">Healthy Promotion of E-Sports</h1>  
+                        <h2 class="about__subtitle" style="font-weight: 300; font-size: 1.25rem; color: white;">Class Project- Design Thinking and Youth</h2>  
+                        <br><br>
+                        <a href="#" class="button">See Details</a>   
+                    </div> 
+                </div>
+                
+                                         
+            </section>
+            
+                <!--===== HOME =====-->
+              
+            <!--===== ABOUT =====-->
+           
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title">Naman Phadnis</p>
+            <div class="footer__social">
+                <a href="" class="footer__icon"><i class='bx bxl-linkedin'></i></a>
+                <a href="" class="footer__icon"><i class='bx bxs-envelope'></i></a>
             </div>
-        </div> 
+        </footer>
+
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="../../js/main.js">
+
+        </script>
+        <script src="../../js/scrollpage.js">
+
+        </script>
     </body>
-    </html>
+</html>

@@ -1,81 +1,90 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>About Me</title>
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel = "icon" href = "../files/headlogo.png" type = "image/x-icon">
-        <link rel = "stylesheet" href = "../main.css">
-        <link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/>
+
+        <link rel="stylesheet" href="../css/styles.css">
+        
+
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <title>Portfolio website complete</title>
     </head>
     <body>
-        <header>
-            <nav class="white z-depth-0">
-                <a href="../">
-                    <img class="logo" src= "../files/common/logo.png" width="5%" alt="Home Button Logo">
-                </a>
-                <ul class="navigation right">
-                    <li class= "navlist">
-                        <a class="nava" id="culprit" href="../projects/">Projects</a>
-                    </li>
-                    <li class="navlist">
-                        <a class= "nava" href="../files/resume.pdf" target="_blank">Resume</a>
-                    </li>
-                    <li class="navlist">
-                        <a class="navaon" href="../about/">About me</a>
-                    </li>
-                </ul>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="index.html" class="nav__logo">
+                        <img class= "logo_img" src="../files/home/derp4.png" width="70rem" height="auto" alt="home button logo">
+                    </a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item animation"><a href="#home" class="nav__link">Home</a></li>
+                        <li class="nav__item animation"><a href="#uxproj" id="temp" class="nav__link">Projects</a></li>
+                        <li class="nav__item animation"><a href="#resume" class="nav__link">Resume</a></li>
+                        <li class="nav__item animation"><a href="#aboutme" class="nav__link active">About Me</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
             </nav>
         </header>
-        <!-- <div class="row">
-            <div class="col s12 m6" id="aboutimg">
-                <img src= "../files/aboutmain.png" width="80%" alt="PC Setup with a Reaper Plushie">
-            </div>
-            <div class="col s12 m6" id="abouttext">
-                <h1>
-                    I’m currently a grad student studying Human Computer Interaction.
-                </h1>
-                <h1>
-                    I started out as designing just for fun, but soon fell in love with it because of some amazing professors and winning design contests. Now it’s one of my absolute favorite things to do. I want to create amazing user experiences and also improve accessibility on the internet.
-                </h1>
-            </div>
-        </div> -->
-        <div class="row">
-        <div class="aboutimg">
-                <img src= "../files/about/aboutmain.png" width="70%" alt="PC Setup with a Reaper Plushie">
-        </div>
-        <div class="abouttext">
-            <p>
-                I’m currently a grad student studying Human Computer Interaction.
-            </p>
-            <p>
-                I started out as designing just for fun, but soon fell in love with it because of some amazing professors and winning design contests. Now it’s one of my absolute favorite things to do. 
-            </p>
-            <p>
-               I want to create amazing user experiences and also improve accessibility on the internet.
-            </p>
-        </div>  
-        </div>  
-        <div class="aboutmore">
-            <p>Apart from designing I love to doodle, and play video games. I’ve played for several Overwatch and Valorant organizations in the past, and currently am a coach for my university's Overwatch team. I also like to stream on Twitch and create videos for YouTube now and then!</p>
-        </div>
-        <div class="collage">
-            <img src= "../files/about/aboutcollage.png" width="100%" alt="Collage of Naman's hobbies">
-        </div>
-        <div class="footer">
-            <div class="row container">
-                <a href="mailto:namanphadnis7@gmail.com" target="blank" style="padding: 10px">
-                    <img src="../files/common/mail.png" alt="Email Logo" width="3%">
-                </a>
-                <a href="https://www.linkedin.com/in/naman-phadnis/" target="blank" style="padding: 10px">
-                    <img src="../files/common/link.png" alt="Linkedin Logo" width="3%">
-                </a>
-                <div class="row" style="text-align: center; font-size: 1vw;">
-                    <p class="text">Designed and Built by Naman Phadnis
-                </p>
+
+        <main class="l-main">
+            <section class="about section " id="ux">
+                <h2 class="section-title" id="ux2">About Me</h2>
+                <div class="about__container bd-grid" >
+                    <div style="font-size: 1.25rem; padding: 3rem 3rem 3rem 3rem;">
+                            <p>I’m currently a grad student studying Human Computer Interaction.</p> <br>
+                            <p>For a long time I was unsure about what I like doing, until I discovered how rewarding it felt to make good experiences for people. Now it’s one of my absolute favorite things to do.</p> <br>
+                            <p>I want to create amazing user experiences regardless of the medium- whether it is through designs, sketches, mockups or videos of cats playing guitar in space.</p>
+                            
+                    </div>
+                    <div style="display: flex; justify-content: center;">
+                        <img width="75%" src="../files/about/aboutmain.png">
+                    </div> 
                 </div>
+                <br>
+                <div style="font-size: 1.25rem; text-align: center; padding-left: 20rem; padding-right: 20rem;">
+                <p >Apart from designing I love to doodle, and play video games. 🎮 </p> <br>
+                <p>I’ve played for several Overwatch and Valorant organizations in the past, and currently I'm a coach for my university's Overwatch team.</p><br>
+                <p>I also like to stream on Twitch and edit videos for YouTube now and then! 🎥</p>
+             </div>
+
+             <div class="about__container" style="display: flex; justify-content: center;">
+                <img width="1200px" src="../files/about/about2.png">
+                
             </div>
-        </div> 
+                                         
+            </section>
+            
+                <!--===== HOME =====-->
+              
+            <!--===== ABOUT =====-->
+           
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title">Naman Phadnis</p>
+            <div class="footer__social">
+                <a href="" class="footer__icon"><i class='bx bxl-linkedin'></i></a>
+                <a href="" class="footer__icon"><i class='bx bxs-envelope'></i></a>
+            </div>
+        </footer>
+
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="../js/main.js">
+
+        </script>
     </body>
-    </html>
+</html>

@@ -1,62 +1,154 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Naman Phadnis</title>
-        <meta name="description" content="Hi! I'm Naman, a UI/UX designer.">
-        <meta name="keywords" content="Naman, Phadnis, Designer, UX, Student, Human Computer Interaction, Naman Phadnis, Portfolio, HCI, HCIM, UMD, User User Experience, Social Media, Engagement">
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel = "icon" href = "files/headlogo.png" type = "image/x-icon">
-        <link rel = "stylesheet" href = "main.css">
-        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+        <link rel="stylesheet" href="css/styles.css">
+        
+
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <title>Portfolio website complete</title>
     </head>
     <body>
-        <header>
-            <nav class="white z-depth-0">
-                    <a href="/">
-                    <img class="logo" src= "files/common/logo.png" width="5%" alt="Home Button Logo">
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">
+                        <img class= "logo_img" src="files/home/derp4.png" width="70rem" height="auto" alt="home button logo">
                     </a>
-                <ul class="navigation right">
-                    <li class= "navlist">
-                        <a class="nava" id="culprit" href="projects/">Projects</a>
-                    </li>
-                    <li class="navlist">
-                        <a class= "nava" href="files/resume.pdf" target="_blank">Resume</a>
-                    </li>
-                    <li class="navlist">
-                        <a class="nava" href="about/">About me</a>
-                    </li>
-                </ul>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item animation"><a href="#" class="nav__link active">Home</a></li>
+                        <li class="nav__item animation"><a href="#" id="temp" class="nav__link">Projects</a></li>
+                        <li class="nav__item animation"><a href="#" class="nav__link">Resume</a></li>
+                        <li class="nav__item animation"><a href="#" class="nav__link">About Me</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
             </nav>
         </header>
-        <div class="herotext">
-            <h1>Hi, <br>I'm Naman.</h1>
-            <br>
-            <br>
-            <h2>I'm a UI/UX Designer.</h2>
-        </div>
-        <div class="heroimg">
-            <img src= "files/home/heropic.png" width="85%" alt="Headshot of Naman">
-        </div>
-        <div class="blank">
-            <p>&nbsp;</p>
-        </div>
-        <div class="footer">
-            <div class="row container">
-                <a href="mailto:namanphadnis7@gmail.com" target="blank" style="padding: 10px">
-                    <img src="files/common/mail.png" alt="Email Logo" width="3%">
-                </a>
-                <a href="https://www.linkedin.com/in/naman-phadnis/" target="blank" style="padding: 10px">
-                    <img src="files/common/link.png" alt="Linkedin Logo" width="3%">
-                </a>
-                <div class="row" style="text-align: center; font-size: 1vw;">
-                    <p class="text">Designed and Built by Naman Phadnis
-                </p>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Hi,<br>I'm <span class="home__title-color">Naman</span></h1><h2>UI/UX and Product Designer</h2><br><br>
+
+                    <a href="#ux" id="mywork" class="button">SEE MY WORK</a>
                 </div>
+
+                <div class="home__social">
+                    <a href="" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                    <a href="" class="home__social-icon"><i class='bx bxs-file'></i></a>
+                    <a href="" class="home__social-icon"><i class='bx bxs-envelope'></i></a>
+                </div>
+
+                <div class="home__img">
+                            <image  width="150%" src="files/home/derp3.png" alt="Doodle of Naman waving"/>
+    
+                </div>
+                <div>
+                    <a class="scroll-down"></a>
+
+                </div>
+            </section>
+
+            <!--===== ABOUT =====-->
+            <section class="about section " id="ux">
+                <h2 class="section-title">UX Projects</h2>
+
+                <div class="about__container bd-grid" >
+                    <div class="about__img">
+                        <img src="files/home/coolschool.png" alt="Cool School Logo">
+                    </div>
+                    
+                    <div>
+                        <h2 class="about__subtitle">Cool School Re-Design</h2>
+                        <!--<h2 class="about__subtitle" style="font-weight: 300; font-size: 1.25rem;">FJ Lennon</h2>-->
+                        <button class="pill" type="button">UI/UX</button>
+                        <button class="pill" type="button">Graphic Design</button>
+                        <button class="pill" type="button">Co-Design with Kids</button>
+                        <button class="pill" type="button">Storyboarding</button>
+                        <br><br>
+                        <p class="about__text">Prototyped the remake of a popular children's game for game designer FJ Lennon, using design sprint methods.</p>
+                        <br><br>
+                        <a href="#" class="button">See More</a>           
+                    </div> 
+                </div>
+                <div class="about__container bd-grid" >                           
+                    
+                    
+                    <div class="about__img">
+                        <img src="files/home/711.png"  alt="Maryland Athletics Logo">
+                    </div>
+                    <div>
+                        <h2 class="about__subtitle">UMD Overwatch App</h2>
+                        <button class="pill" type="button">UI/UX</button>
+                        <button class="pill" type="button">Wireframing</button>
+                        <button class="pill" type="button">Sketching</button>
+                        <br><br>
+                        <p class="about__text">Designed a concept app for UMD Esports, using wireframes and high-fidelity prototypes.</p>   
+                        <br><br>
+                        <a href="#" class="button">See More</a>         
+                    </div>  
+                </div> 
+                <div class="about__container bd-grid" >
+                    <div class="about__img">
+                        <img src="files/home/ischool.png" alt="College of Information Studies Logo">
+                    </div>
+                    
+                    <div>
+                        <h2 class="about__subtitle">iSchool Identity Research</h2>
+                        <button class="pill" type="button">User Research</button>
+                        <button class="pill" type="button">Contextual Design</button>
+                        <br><br>
+                        <p class="about__text">Researched undergraduate students to improve a major through user interviews. Using the information, created affinity diagrams, an identity model, and a relationship model.</p>
+                        <br><br>
+                        <a href="#" class="button">See More</a>       
+                    </div> 
+                </div>
+                <div class="skills__container bd-grid" id="test">        
+                    <div class= "extra">
+                        <img style="border-radius: 2rem;" src="files/home/resume.jpg" alt="Desk with documents on it" style="text-align: center;">
+                        <a href="#" class="button">Resume</a> 
+                    </div>
+                    <div class="extra">
+                        <img style="border-radius: 2rem;" src="files/home/otherprojects.png" alt="Screenshot of Icemania game" style="text-align: center;">
+                        <a href="/projects/" class="button">See All Projects!</a>
+                    </div>
+                </div>                               
+            </section>
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title">Naman Phadnis</p>
+            <div class="footer__social">
+                <a href="" class="footer__icon"><i class='bx bxl-linkedin'></i></a>
+                <a href="" class="footer__icon"><i class='bx bxs-envelope'></i></a>
             </div>
-        </div> 
+        </footer>
+
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="js/main.js">
+
+        </script>
+        <script src="js/smoothscroll.js">
+
+        </script>
+        <script src="js/srev.js">
+
+        </script>
     </body>
-  
-    </html>
-   
+</html>

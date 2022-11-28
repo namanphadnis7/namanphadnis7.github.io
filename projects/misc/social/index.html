@@ -1,157 +1,89 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Social Media Management</title>
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel = "icon" href = "../../../files/common/headlogo.png" type = "image/x-icon">
-        <link rel = "stylesheet" href = "../../../main.css">
-        <link type="text/css" rel="stylesheet" href="../../../css/materialize.min.css"  media="screen,projection"/>
+
+        <link rel="stylesheet" href="../../../css/styles.css">
+        
+
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <title>Portfolio website complete</title>
     </head>
     <body>
-        <header>
-            <nav class="white z-depth-0">
-                <a href="../../../">
-                    <img class="logo" src= "../../../files/common/logo.png" width="5%" alt="Home Button Logo">
-                </a>
-                <ul class="navigation right">
-                    <li class= "navlist">
-                        <a class="navaon" id="culprit" href="../../../projects/">Projects</a>
-                    </li>
-                    <li class="navlist">
-                        <a class= "nava" href="../../../files/resume.pdf" target="_blank">Resume</a>
-                    </li>
-                    <li class="navlist">
-                        <a class="nava" href="../../../about/">About me</a>
-                    </li>
-                </ul>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="index.html" class="nav__logo">
+                        <img class= "logo_img" src="../../../files/home/derp4.png" width="70rem" height="auto" alt="home button logo">
+                    </a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item animation"><a href="#home" class="nav__link">Home</a></li>
+                        <li class="nav__item animation"><a href="#uxproj" id="temp" class="nav__link active">Projects</a></li>
+                        <li class="nav__item animation"><a href="#resume" class="nav__link">Resume</a></li>
+                        <li class="nav__item animation"><a href="#aboutme" class="nav__link">About Me</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
             </nav>
         </header>
-        <div class="projtitle">
-            <h1>
-                Social Media Management
-            </h1>
-        </div>
-        <div class="researchux">
-            <h1>
-                What's that Dish?
-            </h1>
-            <p> I created weekly instagram posts for University of Maryland's Dining Services, called "What's that Dish" Wednesdays to increase student engagement. Students would guess the mystery dish to win dining services' prizes. It was my own idea and very fun to design. </p>
-        </div>
-        <div class="collage" style="margin-top: 0%; text-align: center;">
-            <img src= "../../../files/wtd/wtdcollage.png" width="85%" alt="What's that dish Graphics">
-        </div>
-        <div class="researchux">
-            <h1>
-                National Food Holidays
-            </h1>
-            <p> I also designed and posted the graphics for the National Food Holidays for the Dining Services. </p>
-        </div>
-        <div class="collage" style="margin-top: 0%; text-align: center;">
-            <img src= "../../../files/wtd/nfhcollage.png" width="100%" alt="National Food Holidays Graphics">
-        </div>
-         <!--<div class="lrow">
-            <div class="lcolumn">
-                <h1>Initial Pokemon Theme</h1>
-                <p>The original idea I had was to make a Pokemon theme post chain that the young audience would relate to and love. Unfortunately, because of potential copyright issues with Nintendo, I didn't go through with this.</p>
-            </div>
-            <div class="lcolumn">
-              <img src="../../../files/wtd/wtd1.png" alt="First Graphic Pokemon Style" style="width:100%;">
-            </div>
-        </div>
-        <div class="rrow">
-            <div class="rrcolumn">
-                <img class="lrleftpic" src="../../../files/wtd/wtd2.png" alt="Initial Themes" width="80%">
-            </div>
-            <div class="rrcolumn">
-                <h1>Design Roughwork</h1>
-                <p>I decided to make comic-book-themed posts to still give it a youthful touch and hype. I made the anime speed effect lines, but couldn't quite get the dots right. I saw a similar dot pattern on the window borders of my campus shuttle bus, which inspired me to make it this way in the final design.</p>
-            </div>
-        </div>
-        <div class="lrow">
-            <div class="lcolumn">
-                <h1>Post Design</h1>
-                <p>Initially the idea was to have weekly posts, which later turned into a story idea.</p>
-            </div>
-            <div class="lcolumn">
-              <img src="../../../files/wtd/wtd3.png" alt="Final Post" style="float:right; width:80%;">
-            </div>
-        </div>
-        <div class="rrow">
-            <div class="rrcolumn">
-                <img class="lrleftpic" src="../../../files/wtd/wtd4.png" alt="Final Story Question" width="50%">
-            </div>
-            <div class="rrcolumn">
-                <h1>First Post</h1>
-                <p>Every Wednesday morning, a mystery dish would appear in the Dining Services' instagram stories. Students would reply with their answers, and one of them would be picked as a winner.</p>
-            </div>
-        </div>
-        <div class="lrow">
-            <div class="lcolumn">
-                <h1>The Reveal</h1>
-                <p>At 5 pm, the answer would be revealed as a follow-up Instagram story. Some answers were very easy to guess, some quite difficult. The answers would usually be straightforward or close guesses, along with some completely ridiculous ones.</p>
-            </div>
-            <div class="lcolumn">
-              <img src="../../../files/wtd/wtd5.png" alt="Final story answer" style="float:right; width:50%;">
-            </div>
-        </div> -->
-        <div class="researchux">
-            <h1>
-                Other Projects
-            </h1>
-        </div>
-        <div class="lrow" style="margin-top: 10%;">
-            <div class="lcolumn">
-                <h1>Hindustan Unilever Roadshow</h1>
-                <p>Unilever outsourced a video editing project for their IT Roadshow to me. During high school, I worked with them to create a video using After Effects and Shotcut. </p>
-            </div>
-            <div class="lcolumn">
-              <img src="../../../files/wtd/wtd6.gif" alt="Roadhshow video preview" style="width:100%;">
-            </div>
-        </div>
-        <div class="rrow">
-            <div class="rrcolumn">
-                <img class="lrleftpic" src="../../../files/wtd/wtd7.PNG" alt="Discord server" width="80%">
-            </div>
-            <div class="rrcolumn">
-                <h1>Discord Management</h1>
-                <p>I've created and designed several original discord servers, as well as managed others as a moderator- Including Maryland Dining and UMD's Offical HCIM Server.</p>
-            </div>
-        </div>
-        <div class="lrow" style="margin-top: 10%;">
-            <div class="lcolumn">
-                <h1>YouTube</h1>
-            </div>
-            <div class="lcolumnyt">
-                <a href="https://www.youtube.com/channel/UCSAlZwXXmSa8TMqCCcml_ng" target="_blank">
-              <img src="../../../files/wtd/wtd8.PNG" alt="Naman's Youtube" style="float:right; width:60%;">
-                </a>
-            </div>
-        </div>
-        <div class="lrow">
-            <div class="lcolumn">
-                <h1>Twitch</h1>
-            </div>
-            <div class="lcolumnyt">
-                <a href="https://www.twitch.tv/dragonoidow" target="_blank">
-              <img src="../../../files/wtd/wtd9.PNG" alt="Naman's Twitch" style="float:right; width:60%;">
-                </a>
-            </div>
-        </div>
-        <div class="footer">
-            <div class="row container">
-                <a href="mailto:namanphadnis7@gmail.com" target="blank" style="padding: 10px">
-                    <img src="../../../files/common/mail.png" alt="Email Logo" width="3%">
-                </a>
-                <a href="https://www.linkedin.com/in/naman-phadnis/" target="blank" style="padding: 10px">
-                    <img src="../../../files/common/link.png" alt="Linkedin Logo" width="3%">
-                </a>
-                <div class="row" style="text-align: center; font-size: 1vw;">
-                    <p class="text">Designed and Built by Naman Phadnis
-                </p>
+
+        <main class="l-main">
+                
+            <section class="about section " id="top">
+                <div>
+                    <a href="#title" id="topbutt" class="backtop hidden"></a>
+
                 </div>
+                <h2 class="section-title" id="title">Social Media Graphics</h2>
+                <div class="about__container" style="display: flex; justify-content: center;">
+                    <img width="1600px" src="../../../files/misc/wtd/wtdcollage.png">
+                    
+                </div>
+                <div class="about__container" style="display: flex; justify-content: center;">
+                    <img width="1600px" src="../../../files/misc/wtd/nfhcollage.png">
+                    
+                </div>
+
+
+
+
+            </section>
+            
+                <!--===== HOME =====-->
+              
+            <!--===== ABOUT =====-->
+           
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title">Naman Phadnis</p>
+            <div class="footer__social">
+                <a href="" class="footer__icon"><i class='bx bxl-linkedin'></i></a>
+                <a href="" class="footer__icon"><i class='bx bxs-envelope'></i></a>
             </div>
-        </div>
+        </footer>
+
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="../../../js/main.js">
+
+        </script>
+      
+        <script src="../../../js/scrollpage.js">
+
+        </script>
+
     </body>
 </html>
