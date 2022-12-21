@@ -14,7 +14,8 @@
   --dark-first-color: #39177d;
   /*===== Fonts =====*/
   --body-font: 'Poppins', sans-serif;
-  --big-font-size: 2rem;
+  --big-font-size: 3.5rem;
+  --title-font:5rem;
   --h2-font-size: 1.25rem;
   --normal-font-size: .938rem;
   --smaller-font-size: .75rem;
@@ -251,6 +252,12 @@ transition: all .2s ease-in;
 }
 
 @media screen and (max-width: 767px) {
+
+  :root {
+    --big-font-size: 2.5rem;
+    --title-font:3.5rem;
+  }
+  
   .nav__menu {
     position: fixed;
     top: var(--header-height);
@@ -344,6 +351,7 @@ transition: all .2s ease-in;
 }
 
 .home__title-color {
+  font-size: var(--title-font);
   color: var(--first-color);
 }
 
@@ -665,6 +673,11 @@ cursor: pointer;
 
 /* ===== MEDIA QUERIES=====*/
 @media screen and (max-width: 320px) {
+  :root {
+    --big-font-size: 2rem;
+    --title-font:3rem;
+  }
+  
   .home {
     row-gap: 2rem;
   }
