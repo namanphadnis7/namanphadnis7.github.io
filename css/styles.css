@@ -11,10 +11,10 @@
   --first-color: hsl(var(--hue-color), 89%, 60%);
   --second-color: hsl(var(--hue-color), 56%, 12%);
   --hover-color: hsl(270, 45%, 44%);
-  --dark-first-color: #39177d;
+  --dark-first-color: #4d088c;
   /*===== Fonts =====*/
   --body-font: 'Poppins', sans-serif;
-  --big-font-size: 3.5rem;
+  --big-font-size: 3.3rem;
   --title-font:5rem;
   --h2-font-size: 1.25rem;
   --normal-font-size: .938rem;
@@ -31,7 +31,7 @@
 
 @media screen and (min-width: 968px) {
   :root {
-    --big-font-size: 3.5rem;
+    --big-font-size: 3.3rem;
     --h2-font-size: 2rem;
     --normal-font-size: 1rem;
     --smaller-font-size: .875rem;
@@ -225,6 +225,27 @@ transition: all .2s ease-in;
   margin-left: var(--mb-2);
   margin-right: var(--mb-2);
 }
+
+.role-grid {
+  max-width: 1366px;
+  display: grid;
+  margin-left: var(--mb-2);
+  margin-right: var(--mb-2);
+  display: flex; 
+  max-width: 100%;  
+  flex-wrap: wrap;
+  
+}
+
+.role-col {
+  text-align: left;
+  flex: 20%; 
+  height: 15rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+ 
+}
+
 .bd-ct {
   margin-left: var(--mb-2);
   margin-right: var(--mb-2);
@@ -254,8 +275,12 @@ transition: all .2s ease-in;
 @media screen and (max-width: 767px) {
 
   :root {
-    --big-font-size: 2.5rem;
+    --big-font-size: 2.3rem;
     --title-font:3.5rem;
+  }
+
+  .role-grid {
+    flex-direction: column;
   }
   
   .nav__menu {
@@ -348,7 +373,21 @@ transition: all .2s ease-in;
 .home__title {
   font-size: var(--big-font-size);
   margin-bottom: var(--mb-5);
+  
 }
+
+.home__titlegrey {
+  font-size: var(--big-font-size);
+  margin-bottom: var(--mb-5);
+  color: rgb(39, 39, 39);
+}
+
+.role_title {
+  font-size: 1.5rem;
+  color: var(--first-color);
+  padding-bottom: .5rem;
+}
+
 
 .home__title-color {
   font-size: var(--title-font);
@@ -419,13 +458,27 @@ transition: all .2s ease-in;
 
 .button:hover {
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
-  background-color: #39177d;
+  background-color: #4d088c;
+}
+
+.button_smol {
+  display: inline-block;
+  background-color: var(--first-color);
+  color: #fff;
+  padding: .75rem 2.5rem;
+  font-weight: var(--font-semi);
+  border-radius: .5rem;
+  transition: .3s;
+}
+
+.button_smol:hover {
+  background-color: #4d088c;
 }
 
 .button_lite {
   display: inline-block;
   background-color: #fff;
-  color: #39177d;
+  color: #4d088c;
   padding: .75rem 2.5rem;
   font-weight: var(--font-semi);
   border-radius: .5rem;
@@ -442,7 +495,7 @@ transition: all .2s ease-in;
 .button_dull {
   display: inline-block;
   background-color: #fff;
-  color: #39177d;
+  color: #4d088c;
   padding: .75rem 2.5rem;
   font-weight: var(--font-semi);
   border-radius: .5rem;
@@ -470,6 +523,10 @@ transition: all .2s ease-in;
 .button_home:hover {
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
   background-color: var(--first-color);
+}
+
+#result {
+  scroll-margin-top: 100px;
 }
 
 /* ===== ABOUT =====*/
@@ -674,7 +731,7 @@ cursor: pointer;
 /* ===== MEDIA QUERIES=====*/
 @media screen and (max-width: 320px) {
   :root {
-    --big-font-size: 2rem;
+    --big-font-size: 1.9rem;
     --title-font:3rem;
   }
   
@@ -686,7 +743,7 @@ cursor: pointer;
   }
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 620px) {
 
   .home {
     padding: 4rem 0 2rem;
@@ -733,6 +790,10 @@ cursor: pointer;
 @media screen and (min-width: 768px) {
   body {
     margin: 0;
+  }
+  .role-grid{
+    padding-left:5rem; 
+    padding-right: 5rem;
   }
   .section {
     padding-top: 6rem;
@@ -800,5 +861,15 @@ cursor: pointer;
   }
   .home__img {
     width: 450px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1366px) {
+  .role-col {
+    flex: 33%; 
+   
+  }  
+  .role-grid{
+    padding-left:10rem; 
+    padding-right: 10rem;
   }
 }
