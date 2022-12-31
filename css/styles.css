@@ -1,5 +1,5 @@
 /*===== GOOGLE FONTS =====*/
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 /*===== VARIABLES CSS =====*/
 :root {
   --header-height: 4rem;
@@ -10,6 +10,7 @@
   --hue-color: 260;
   --first-color: hsl(var(--hue-color), 89%, 60%);
   --second-color: hsl(var(--hue-color), 56%, 12%);
+  --body-color: #3b3b3b;
   --hover-color: hsl(270, 45%, 44%);
   --dark-first-color: #4d088c;
   /*===== Fonts =====*/
@@ -51,7 +52,13 @@ body {
   margin: var(--header-height) 0 0 0;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
-  color: var(--second-color);
+  color: var(--body-color);
+  
+}
+
+h1,h2, b{
+  color: rgb(39, 39, 39);
+  
 }
 
 h1, h2, p {
@@ -435,6 +442,7 @@ transition: all .2s ease-in;
 
 .pill {
   font-size: .75rem;
+  font-weight: 500;
   color: white;
   font-family: var(--body-font);
   padding: 0.5rem 1rem;
