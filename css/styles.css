@@ -13,6 +13,9 @@
   --body-color: #3b3b3b;
   --hover-color: hsl(270, 45%, 44%);
   --dark-first-color: #4d088c;
+  /*===== Gallery =====*/
+  --opacity-yes:1;
+  --opacity-no:0;
   /*===== Fonts =====*/
   --body-font: 'Poppins', sans-serif;
   --big-font-size: 3.3rem;
@@ -436,6 +439,48 @@ transition: all .2s ease-in;
   width: 360px;
 }
 
+
+/*Gallery*/
+
+.gallery-row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 5rem;
+  transition: .3s;
+}
+
+/* Create four equal columns that sits next to each other */
+.gallery-column {
+  flex: 50%;
+  max-width: 50%;
+  padding: 0 2rem;
+}
+
+.gallery-column img {
+  margin-top: 5rem;
+  vertical-align: middle;
+  width: 100%;
+  transition: .3s;
+  filter: grayscale(1);
+}
+
+.gallery-column img:hover {
+  transform: scale(1.1);
+      filter: grayscale(0);
+}
+
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 900px) {
+  .gallery-column {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .gallery-row {
+    
+    padding: 0 2rem;
+  }
+}
 
 
 /*BUTTONS*/
