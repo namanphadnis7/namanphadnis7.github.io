@@ -475,10 +475,11 @@ transition: all .2s ease-in;
   .gallery-column {
     flex: 100%;
     max-width: 100%;
+    padding: 0;
   }
   .gallery-row {
     
-    padding: 0 2rem;
+    padding: 0 0.75rem;
   }
 }
 
