@@ -305,6 +305,10 @@ transition: all .2s ease-in;
     --title-font:3.5rem;
   }
 
+  #home{
+    padding-top: 0;
+  }
+
   .role-grid {
     flex-direction: column;
     margin-left: 1rem;
@@ -705,6 +709,12 @@ width: 33.33%;
   padding-right: 2rem;
 
 }
+.home__container {
+  row-gap: 2rem;
+  text-align: center;
+  padding-bottom: 8rem;
+  border-color: lightgray;
+}
 
 .about__container {
   row-gap: 2rem;
@@ -925,10 +935,11 @@ cursor: pointer;
   }
 }
 
+
 @media screen and (min-width: 620px) {
 
   .home {
-    padding: 4rem 0 2rem;
+    padding: 2rem 0 2rem;
   }
   .home__social {
     padding-top: 0;
@@ -941,12 +952,15 @@ cursor: pointer;
     margin-right: var(--mb-4);
   }
   .home__img {
-    
     width: 300px;
     bottom: 25%;
   }
   .about__container {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .home__container {
+    grid-template-columns: repeat(2, 1fr);
+    text-align: initial;
   }
   .skills__container {
     grid-template-columns: .7fr;
@@ -1004,13 +1018,16 @@ cursor: pointer;
     color: var(--second-color);
   }
   .home {
-    padding: 8rem 0 2rem;
+    padding: 3rem 0 2rem;
   }
   .home__img {
     width: 400px;
     bottom: 10%;
   }
   .about__container {
+    padding-top: 2rem;
+  }
+  .home__container {
     padding-top: 2rem;
   }
   .about__img img {
@@ -1037,7 +1054,7 @@ cursor: pointer;
     margin-right: auto;
   }
   .home {
-    padding: 10rem 0 2rem;
+    padding: 5rem 0 2rem;
   }
   .home__img {
     width: 450px;
