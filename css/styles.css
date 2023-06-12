@@ -309,6 +309,20 @@ transition: all .2s ease-in;
     padding-top: 0;
   }
 
+  #about1{
+    padding-bottom: 6rem;
+  }
+
+  #aboutcollage{
+    width: 100%;
+  }
+  
+  .aboutpic{
+    padding-left: 0;
+    padding-right: 0;
+    width: 80%;
+  }
+
   .role-grid {
     flex-direction: column;
     margin-left: 1rem;
