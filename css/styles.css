@@ -1074,6 +1074,8 @@ cursor: pointer;
     width: 450px;
   }
 }
+
+
 @media screen and (min-width: 768px) and (max-width: 1366px) {
   .role-col {
     flex: 33%; 
