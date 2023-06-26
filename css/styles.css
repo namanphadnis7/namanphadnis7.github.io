@@ -528,12 +528,12 @@ transition: all .2s ease-in;
   vertical-align: middle;
   width: 100%;
   transition: .3s;
-  filter: grayscale(1);
+ 
 }
 
 .gallery-column img:hover {
   transform: scale(1.1);
-      filter: grayscale(0);
+     
 }
 
 
