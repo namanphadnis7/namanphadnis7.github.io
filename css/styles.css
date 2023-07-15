@@ -359,6 +359,8 @@ transition: all .2s ease-in;
   position: relative;
   row-gap: 5rem;
   padding: 4rem 0 5rem;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
 }
 
 .home__data {
@@ -959,6 +961,15 @@ cursor: pointer;
     padding-top: 0;
   }
 
+  .home {
+    position: relative;
+    row-gap: 2rem;
+    padding: 4rem 0 2rem;
+    margin-top: 6rem;
+    margin-bottom: 0;
+  }
+  
+
   .home_img {
     float: none;
     margin: auto;
@@ -1075,9 +1086,6 @@ cursor: pointer;
    
   }
   
-  .home {
-    row-gap: 2rem;
-  }
   .home__img {
     width: 200px;
   }
