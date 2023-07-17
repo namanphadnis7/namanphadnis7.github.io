@@ -482,14 +482,16 @@ transition: all .2s ease-in;
 .gallery-row {
   display: flex;
   flex-wrap: wrap;
+  padding-left: 10rem;
+  padding-right: 10rem;
   padding: 0 5rem;
   transition: .3s;
 }
 
 /* Create four equal columns that sits next to each other */
 .gallery-column {
-  flex: 50%;
-  max-width: 50%;
+  flex: 33%;
+  max-width: 33%;
   padding: 0 2rem;
 }
 
