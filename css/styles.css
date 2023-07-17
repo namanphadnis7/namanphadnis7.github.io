@@ -503,6 +503,34 @@ transition: all .2s ease-in;
      
 }
 
+.about-row {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 12rem;
+  padding-right: 12rem;
+  transition: .3s;
+}
+
+/* Create four equal columns that sits next to each other */
+.about-column {
+  flex: 25%;
+  max-width: 25%;
+ 
+}
+
+.about-column img {
+  margin-top: 5rem;
+  vertical-align: middle;
+  width: 100%;
+  transition: .3s;
+ 
+}
+
+.about-column img:hover {
+  transform: scale(1.1);
+     
+}
+
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 900px) {
@@ -512,6 +540,15 @@ transition: all .2s ease-in;
     padding: 0;
   }
   .gallery-row {
+    
+    padding: 0 0.75rem;
+  }
+  .about-column {
+    flex: 100%;
+    max-width: 100%;
+    padding: 0;
+  }
+  .about-row {
     
     padding: 0 0.75rem;
   }
